@@ -1,0 +1,126 @@
+/*RESET STYLES*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*GLOBAL STYLES*/
+
+html {
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 22px;
+    line-height: normal;
+}
+
+body {
+    background-color: black;
+    color: seashell;
+    opacity: 0.9;
+}
+
+/*NAVIGATION BAR STYLES*/
+
+header {
+    height: 69px;
+    width: 100%;
+    top:0;
+    z-index: 2;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: underline;
+    display: block;
+    color: seashell;
+    margin: 0 40px;
+}
+
+.navigation a:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 700px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    header {
+        height: auto;
+    }
+}
+
+/*MISSION SECTION STYLES*/
+
+.mission-container {
+    display: flex;
+    position: relative;
+    top: 70px;
+    height: 700px;
+    width: 1200px;
+    background-image: url(/Tea_Cozy_Layout_Flexbox/Assets/img-mission-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px){
+    .mission-container {
+        width: auto;
+    }
+
+    .mission-container h2, h4{
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .mission-container {
+        top: 138px;
+    }
+    
+}
+
+.mission-container h2{
+    background-color: black;
+    width: 1200px;
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+.mission-container h4{
+    background-color: black;
+    width: 1200px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.mission-statement-container {
+    flex-shrink: 2;
+}
