@@ -206,3 +206,26 @@ figcaption {
     font-weight: 400
 }
 
+/*CONTACT SECTION STYLES*/
+
+.contact-container {
+    text-align: center;
+    height: 200px;
+    width: auto;
+}
+
+.contact-container h2 {
+    margin-top: 30px;
+}
+
+.contact-container h5, .contact-container h4 {
+    margin: 35px;
+}
+
+/*FOOTER STYLES*/
+
+footer h5{
+    margin: 20px;
+    float: left;
+}
+
