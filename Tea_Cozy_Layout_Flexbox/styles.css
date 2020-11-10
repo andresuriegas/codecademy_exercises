@@ -31,6 +31,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
 
 .logo {
@@ -124,3 +125,84 @@ header {
 .mission-statement-container {
     flex-shrink: 2;
 }
+
+/*FEATURED TEAS SECTION STYLES*/
+
+.featured-container {
+    width: 1000px;
+    margin: 150px auto 90px auto;
+    position: relative;
+}
+
+.featured-statement {
+    text-align: center;
+    margin: 20px;
+}
+
+.featured-statement h4 {
+    margin: 20px 0;
+}
+
+.flexbox-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: block;
+}
+
+.img-container img{
+    height: 200px;
+    width: 300px;
+    flex-basis: auto;
+    margin: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/*LOCATIONS SECTION STYLES*/
+
+.locations-container {
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    background-image: url(/Tea_Cozy_Layout_Flexbox/Assets/img-locations-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.locations-statement {
+    text-align: center;
+    width: 100%;
+}
+
+.address-container {
+    width: 300px;
+    height: 250px;
+    margin: 30px 40px;
+    background-color: black;
+    opacity: 1;
+    text-align: center;
+}
+
+.address-container h3 {
+    margin-top: 30px;
+}
+
+.address-container h4 {
+    margin-top: 25px;
+    font-weight: 400
+}
+
