@@ -12,7 +12,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Raleway", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -31,7 +32,7 @@
   }
   
 .logo {
-    width: 150px;
+    width: 250px;
     margin-left: 80px;
 }
 
@@ -51,7 +52,6 @@ nav ul li a {
     color: #5c5c5c;
     font-weight: 700;
     position: relative;
-
 }
 
 nav ul li a:hover {
@@ -64,7 +64,7 @@ nav ul li a::before {
     width: 100%;
     height: 3px;
     bottom: 0;
-    background-color: orangered;
+    background-color: #ff4500;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
@@ -78,7 +78,7 @@ nav ul li a:hover::before {
 /* MAIN SECTION STYLES*/
 
 .main {
-    background: greenyellow;
+    background-image: url(/Company_Home_Page_Flexbox/main-background.svg);
     height: 90vh;
 }
 
@@ -87,28 +87,155 @@ nav ul li a:hover::before {
 }
 
 .main h1 {
-    font-size: 8rem;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 9rem;
     text-align: left;
     font-weight: 800;
     background-color: white;
+    padding: 0 40px;
 }
 
 .main h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: left;
     font-weight: 800;
     background-color: white;
+    padding: 0 40px;
+}
+
+.main h3 {
+    font-size: 2.8rem;
+    text-align: left;
+    font-weight: 800;
+    background-color: white;
+    padding: 0 40px;
+}
+
+/* ABOUT SECTION STYLES*/
+
+.about {
+    background-color: rgb(235, 235, 235);
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.text h3 {
+    font-weight: 200;
+}
+
+
+.highlight {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+}
+
+.text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    font-size: 3rem;
+    align-self: center;
+}
+
+.image {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
 }
 
 /* GALLERY SECTION STYLES*/
 
 .gallery {
-    background-color: coral;
+    background: rgb(226, 110, 43);
 }
+
 
 /* FOOTER STYLES*/
 
 .footer {
-    background: blueviolet;
+    height: 30vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 43, 43);
+    justify-content: space-around;
+    align-content: center;
   }
+
+.copyright {
+      width: 32%;
+  }
+
+.copyright h2 {
+      color: white;
+  }
+
+.copyright > img {
+      width: 400px;
+      padding: 20px 0;
+  }
+
+.footer-navigation {
+      width: 32%;
+      align-content: center;
+  }
+
+.footer ul {
+      list-style: none;
+      margin: 0 auto;
+      height: auto;
+  }
+
+.footer ul li {
+      padding: 20px;
+      margin: 10px;
+  }
+
+  .footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+.footer ul li a:hover {
+    color: #5c5c5c;
+}
+
+.footer ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    background-color: #ff4500;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.footer ul li a:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+
+.social {
+    width: 32%;
+}
+
 
