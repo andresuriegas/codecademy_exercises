@@ -98,15 +98,19 @@ nav ul li a:hover::before {
 .main h2 {
     font-size: 4rem;
     text-align: left;
-    font-weight: 800;
+    font-weight: 400;
     background-color: white;
     padding: 0 40px;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 .main h3 {
     font-size: 2.8rem;
     text-align: left;
-    font-weight: 800;
+    font-weight: 400;
     background-color: white;
     padding: 0 40px;
 }
@@ -123,6 +127,7 @@ nav ul li a:hover::before {
 
 .text h3 {
     font-weight: 200;
+    font-size: 2.5rem;
 }
 
 
@@ -134,14 +139,13 @@ nav ul li a:hover::before {
 }
 
 .text {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     width: 50%;
     height: 100%;
     font-size: 3rem;
-    align-self: center;
 }
 
 .image {
@@ -149,6 +153,10 @@ nav ul li a:hover::before {
     align-items: center;
     justify-content: center;
     height: 100%;
+    background-image: url(/Company_Home_Page_Flexbox/pexels-cottonbro-5530250.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .image img {
@@ -156,32 +164,103 @@ nav ul li a:hover::before {
     width: 100%;
 }
 
+/* STAFF SECTION STYLES*/
+
+.staff {
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.people {
+    display: flex;
+    width: 50%;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+.people img {
+    width: 300px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Company_Home_Page_Flexbox/map.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* GALLERY SECTION STYLES*/
 
 .gallery {
-    background: rgb(226, 110, 43);
+    background-color: rgb(235, 235, 235);
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-child-1{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url(/Company_Home_Page_Flexbox/pexels-cottonbro-5532667.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-child-2{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url(/Company_Home_Page_Flexbox/pexels-cottonbro-5530262.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.gallery-child img {
+    height: 100%;
+    width: 100%;
 }
 
 
 /* FOOTER STYLES*/
 
 .footer {
-    height: 30vh;
+    height: 25vh;
     display: flex;
     flex-flow: row wrap;
     margin: 0;
     padding: 0;
-    background-color: rgb(43, 43, 43);
+    background-color: lightgray;
     justify-content: space-around;
     align-content: center;
   }
 
 .copyright {
       width: 32%;
+      background-color: lightgray;
   }
 
 .copyright h2 {
-      color: white;
+      color: #5c5c5c;
+      font-weight: 800;
   }
 
 .copyright > img {
@@ -201,19 +280,20 @@ nav ul li a:hover::before {
   }
 
 .footer ul li {
-      padding: 20px;
+      padding: 12px;
       margin: 10px;
   }
 
   .footer ul li a {
     text-decoration: none;
-    color: white;
+    color: #5c5c5c;
     font-size: 1.5rem;
     position: relative;
+    font-weight: 800;
   }
 
 .footer ul li a:hover {
-    color: #5c5c5c;
+    color: #424242;
 }
 
 .footer ul li a::before {

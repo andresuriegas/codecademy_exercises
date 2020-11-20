@@ -5,13 +5,15 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/Company_Home_Page_Flexbox/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
 
   <body>  
+  <!--FLEXBOX CONTAINER STARTS HERE-->    
   <div class="wrapper">  
+  <!--HEADER AND NAVIGATION BAR-->
     <header class="header">
       <a href="index.html" class="logo"><img src="/Company_Home_Page_Flexbox/logo.svg" alt="logo"></a>
       <nav>
@@ -24,31 +26,45 @@
       </nav>
     </header>
 
+  <!--LANDING PAGE WELCOME-->
     <main class="main">
       <div class="welcome-banner">
         <h1>WELCOME</h1>
-        <h2>We are THE BLIND TIGER BREWING CO.</h2>
+        <h2>We are <span class="highlight bold">THE BLIND TIGER BREWING CO.</span></h2>
         <h2>We brew awesome beers.</h2>
       </div>
     </main>
 
+  <!--ABOUT US SECTION-->
     <section class="about" id="about">
 
       <div class="text">
         <h1>about us</h1>
-        <h3 class="about-banner">A micro-brewery in the heart of the Swedish west coast with the purpose to brew <span class="highlight">awesome beers.</span></h3>
-      
+        <h3 class="about-banner">Whe are a micro-brewery in the heart of the Swedish west coast with the only purpose to brew <span class="highlight">awesome beers.</span> Hopefully you will enojoy them as we do.</h3>
       </div>
 
       <div class="image">
-        <img src="/Company_Home_Page_Flexbox/pexels-cottonbro-5530250.jpg" alt="">
       </div>
     </section>
 
-    <section class="gallery" id="products">
-      
+  <!--STAFF & MAP SECTION-->
+    <section class="staff">
+      <div class="map">
+      </div>
+      <div class="people">
+        <div><img src="/Company_Home_Page_Flexbox/peep-1-01.svg" alt=""><h2>Jenna</h2><p>Co-owner and CEO</p></div>
+        <div><img src="/Company_Home_Page_Flexbox/peep-2-02.svg" alt=""><h2>Andrés</h2><p>Co-owner and Brewmaster</p></div>
+        <div><img src="/Company_Home_Page_Flexbox/peep-3-03.svg" alt=""><h2>Sid</h2><p>Co-owner and Recipe Head Engineer</p></div>
+      </div>
     </section>
 
+  <!--GALLERY-->
+    <section class="gallery" id="products">
+      <div class="gallery-child-1"></div>
+      <div class="gallery-child-2"></div>
+    </section>
+
+  <!--FOOTER-->
     <footer class="footer">
       <div class="copyright">
         <img src="/Company_Home_Page_Flexbox/logo.svg" alt="logo">
@@ -58,20 +74,21 @@
       <div class="footer-navigation">
         <ul>
           <li><a href="index.html">home</a></li>
-          <li><a href="">about</a></li>
+          <li><a href="#about">about</a></li>
           <li><a href="#products">products</a></li>
-          <li><a href="">contact</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </div>
       <div class="social">
         <ul>
-          <li><a href="index.html">twitter</a></li>
+          <li><a href="">twitter</a></li>
           <li><a href="">facebook</a></li>
-          <li><a href="#products">instagram</a></li>
+          <li><a href="">instagram</a></li>
           <li><a href="">e-mail</a></li>
         </ul>
       </div>
     </footer>
   </div>
+  <!--FLEXBOX CONTAINER ENDS HERE-->    
   </body>
 </html>
