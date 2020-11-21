@@ -82,7 +82,7 @@ header {
     top: 70px;
     height: 700px;
     width: 1200px;
-    background-image: url(/Tea_Cozy_Layout_Flexbox/Assets/img-mission-background.jpg);
+    background-image: url(./Assets/img-mission-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
