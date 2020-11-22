@@ -6,27 +6,31 @@
     <title>Summit Climbing Club</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./Assets/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </span>
-            <a href="#" class="logo">Summit Climbing Club</a>
+            <a href="#" class="logo">summit climbing club</a>
             <ul class="main-nav" id="js-menu">
                 <li>
                     <a href="#" class="nav-links">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">About Us</a>
+                    <a href="#about-us" class="nav-links">About Us</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">Events</a>
+                    <a href="#events" class="nav-links">Events</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">Contact Us</a>
+                    <a href="#sign-up" class="nav-links">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -40,14 +44,83 @@
         <div class="landing-text">
             <h1>Welcome to Summit Climbing Club</h1>
             <h3>Meet up. Climb. Repeat. </h3>
-            <a href="#" class="btn">Start Here</a>
+            <a href="#about-us" class="btn">Start Here</a>
         </div>
     </section>
 
-    <section>
-        <h2>About Us</h2>
-        <p><span class="highlight">Summit Climbing Club</span> is open to anyone who wants to join. We organize social climbing events, trips, courses and youth training. We also keep track of local access issues and make sure we are allowed to climb on all our cliffs. We strive to maintain bolts and anchors in our area. Get in touch with us and find new climbing buddies </p>
-    </section>
+    <a id="about-us"></a>
+    <div class="about-us flex-container">
+        <div class="flex-item-text">
+            <h1> About Us</h1>
+            <p><span class="highlight">Summit Climbing Club</span> is open to anyone who wants to join. We organize social climbing events, trips, courses and youth training. We also keep track of local access issues and make sure we are allowed to climb on all our cliffs. We strive to maintain bolts and anchors in our area.</p>
+            <p>You don't need to have any experience to join, climbing is a fun sport for everyone!</p>
+            <p>Climbing is flexible - our sessions are drop-in - you don't need to come to every single one or for the full amount of session time. </p>
+            <p>Check out our social media pages to keep updated with the latest information and to find out about the upcoming events.</p>
+        </div>
+        <div class="flex-item-img" id="img-1"></div>
+    </div>
+
+    <a id="events"></a>
+    <div class="events flex-container">
+        <div class="flex-item-img" id="img-2"></div>
+        <div class="flex-item-text">
+            <h1>Events</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>25th</td>
+                        <td>November</td>
+                        <td>2020</td>
+                        <td>Bouldering for beginners</td>
+                        <td><a class="btn-small">Sign-up</a></td>
+                    </tr>
+                    <tr>
+                        <td>28th</td>
+                        <td>November</td>
+                        <td>2020</td>
+                        <td>Rope climbing for beginners</td>
+                        <td><a class="btn-small">Sign-up</a></td>
+                    </tr>
+                    <tr>
+                        <td>3rd</td>
+                        <td>December</td>
+                        <td>2020</td>
+                        <td>Bouldering intermediate</td>
+                        <td><a class="btn-small">Sign-up</a></td>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td>December</td>
+                        <td>2020</td>
+                        <td>Overhang technique</td>
+                        <td><a class="btn-small">Sign-up</a></td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td>December</td>
+                        <td>2020</td>
+                        <td>Improve your footwork!</td>
+                        <td><a class="btn-small">Sign-up</a></td>
+                    </tr>
+                    <tr>
+                        <td>20th</td>
+                        <td>December</td>
+                        <td>2020</td>
+                        <td>Christmas climbing meet-up</td>
+                        <td><a class="btn-small">Sign-up</a></td>
+                    </tr>
+                    <tr>
+                        <td>4th</td>
+                        <td>January</td>
+                        <td>2021</td>
+                        <td>First hike of the year</td>
+                        <td><a class="btn-small">Sign-up</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
 
     <footer>
 
