@@ -10,6 +10,10 @@
     font-size: 16px;
 }
 
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
 /*NAVBAR GLOBAL STYLES*/
 
 .navbar {
@@ -20,7 +24,6 @@
     position: fixed;
     z-index: 3;
     width: 100%;
-    height: 5%;
 }
 
 .nav-links, 
@@ -29,10 +32,6 @@
     text-decoration: none;
     font-weight: 400;
     color: #fff;
-}
-
-.nav-links:hover {
-    font-weight: 600;
 }
 
 .main-nav li {
@@ -51,34 +50,92 @@
 
 /*NAVBAR FOR MOBILE STYLES*/
 
-.navbar-toggle {
-    position: absolute;
-    top: 15px;
-    right: 40px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.5rem;
-    z-index: 3;
+@media screen and (max-width: 549px) {
+
+    /*.navbar {
+        height: 13%;
+    }*/
+
+    .logo {
+        display: none;
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    #short {
+        display: inline-block;
+    }
+
+    .navbar-toggle {
+        position: absolute;
+        top: 45px;
+        right: 45px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.5rem;
+        z-index: 3;
+    }
+    
+    .navbar-toggle:active {
+        color: rgba(0,190,134,1);
+    }
+    
+    .main-nav {
+        list-style: none;
+        display: none;
+    }
+    
+    .active {
+        display: block;
+        background-image: linear-gradient(90deg, rgba(0,190,134,1) 0%, rgba(138,135,240,1) 50%, rgba(78,30,211,1) 100%);
+        padding: 10px;
+    }
 }
 
-.main-nav {
-    list-style: none;
-    display: none;
-}
+@media screen and (min-width: 550px) {
 
-.active {
-    display: block;
+    #short {
+        display: none;
+    }
+
+    .navbar-toggle {
+        position: absolute;
+        top: 15px;
+        right: 60px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.5rem;
+        z-index: 3;
+    }
+    
+    .navbar-toggle:active {
+        color: rgba(0,190,134,1);
+    }
+    
+    .main-nav {
+        list-style: none;
+        display: none;
+    }
+    
+    .active {
+        display: block;
+        background-image: linear-gradient(90deg, rgba(0,190,134,1) 0%, rgba(138,135,240,1) 50%, rgba(78,30,211,1) 100%);
+        padding: 10px;
+    }
 }
 
 /*NAVBAR DESKTOP STYLES*/
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1080px) {
+
+    #short {
+        display: none;
+    }
     
     .navbar {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
-        height: 70px;
         align-items: center;
         z-index: 3;
     }
@@ -100,6 +157,7 @@
 
     .logo {
         margin-top: 0;
+        padding: 2rem 0;
     }
 
    .navbar-toggle {
@@ -109,26 +167,30 @@
     .logo:hover,
     .nav-links:hover {
         color: rgba(255, 255, 255, 1);
+        background-image: linear-gradient(90deg, rgba(0,190,134,1) 0%, rgba(138,135,240,1) 70%, rgba(78,30,211,1) 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.1em;
+        background-position: 0 100%;
     }
 }
 
 /*VIDEO LANDING PAGE STYLES*/
 
+/*VIDEO LANDING PAGE STYLES*/
+
 body {
     font-family: "Montserrat", Arial, sans-serif;
-}
-
-section {
-    max-width: 57%;
-    margin: auto;
-    text-align: center;
+    width: 100%;
 }
 
 .wrapper {
     height: 100vh;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #fff;    
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 
 .video-wrap {
@@ -145,122 +207,104 @@ section {
     min-height: 100%;
 }
 
+@media (min-aspect-ratio: 16/9) {
+    .video-wrap video {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-wrap video { 
+        width:auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .video-wrap video {
+        display: none;
+    }
+     .wrapper{
+        background-image: url(./Assets/pexels-trace-hudson-2365457.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .landing-text h1 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    
+    .landing-text h3 {
+        font-weight: 500;
+        font-size: 1.5em;
+        margin: 0 auto 2rem auto;
+        color: rgb(78, 30, 211);
+    }
+
+    .btn {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.7rem;
+        background-color: rgb(78, 30, 211);
+        padding: 1% 3%;
+        border-radius: 30px;
+        margin-top: 10%;
+    }
+    
+    .btn:hover {
+        background: rgba(0,190,134,1);
+    }
+
+    .landing-text {
+        z-index: 2;
+        width: 100%;
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (min-width:550px) {
+    .landing-text h1 {
+        font-weight: 700;
+        font-size: 5rem;
+    }
+    
+    .landing-text h3 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        padding-bottom: 3%;
+        margin: 2rem auto;
+    }
+
+    .btn {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.7rem;
+        background-color: rgb(78, 30, 211);
+        padding: 1% 3%;
+        border-radius: 30px;
+    }
+    
+    .btn:hover {
+        background: rgba(0,190,134,1);
+    }
+
+    .landing-text {
+        z-index: 2;
+        width: 100%;
+    }
+}
+
 .overlay {
     z-index: 1;
-    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     background: rgb(165, 165, 165);
     position: absolute;
     opacity: 0.3;
-}
-
-.landing-text {
-    z-index: 2;
-}
-
-.landing-text h1 {
-    font-weight: 700;
-    font-size: 5rem;
-}
-
-.landing-text h3 {
-    font-weight: 400;
-    font-size: 2.5rem;
-    padding-bottom: 3%;
-}
-
-.btn {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.7rem;
-    background-color: rgb(78, 30, 211);
-    padding: 1% 3%;
-    border-radius: 30px;
-}
-
-.btn:hover {
-    background: rgba(0,190,134,1);
-}
-
-/*ABOUT US SECTION STYLES*/
-
-.flex-container {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    height: 100vh;
-}
-
-.flex-item-text {
-    width: 50%;
-    text-align: justify;
-    position: relative;
-}
-
-.flex-item-text h1 {
-    margin-top: 200px;
-    margin-left: 50px;
-    font-size: 5rem;
-    display: inline-block;
-    padding: 10px 30px;
-    background-image: linear-gradient(90deg, rgba(0,190,134,1) 0%, rgba(138,135,240,1) 50%, rgba(78,30,211,1) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 100%;
-}
-
-.flex-item-text p {
-    font-size: 1.5rem;
-    margin-top: 30px;
-    display: inline-block;
-    padding: 10px 40px;
-}
-
-#img-1 {
-    width: 50%;
-    background-image: url(./Assets/pexels-roman-pohorecki-23385.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* EVENTS SECTION STYLES*/
-
-#img-2 {
-    width: 50%;
-    background-image: url(./Assets/pexels-jarod-lovekamp-2404444.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-table {
-    width: 90%;
-    border-spacing: 0;
-    border-collapse: collapse;
-    margin-left: 3.125rem ;
-    margin-top: 2rem;
-}
-
-td {
-    border-bottom: 1px solid rgba(78,30,211,1);
-}
-
-tr {
-    height: 120px;
-}
-
-.btn-small {
-    background: rgba(78,30,211,1);
-    padding: 10% 20%;
-    border-radius: 30px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.btn-small:hover {
-    background: rgba(0,190,134,1);
-    color: #fff;
 }
