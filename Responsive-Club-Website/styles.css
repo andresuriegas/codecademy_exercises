@@ -19,7 +19,6 @@ body {
 .navbar {
     font-size: 1.2rem;
     background-image: linear-gradient(90deg, rgba(0,190,134,1) 0%, rgba(138,135,240,1) 50%, rgba(78,30,211,1) 100%);
-    opacity: 0.95;
     padding-bottom: 10px;
     position: fixed;
     z-index: 3;
@@ -52,10 +51,6 @@ body {
 
 @media screen and (max-width: 549px) {
 
-    /*.navbar {
-        height: 13%;
-    }*/
-
     .logo {
         display: none;
         font-size: 1.8rem;
@@ -64,11 +59,12 @@ body {
 
     #short {
         display: inline-block;
+        font-size: 1.5rem;
     }
 
     .navbar-toggle {
         position: absolute;
-        top: 45px;
+        top: 35px;
         right: 45px;
         cursor: pointer;
         color: rgba(255, 255, 255, 0.8);
@@ -176,8 +172,6 @@ body {
 
 /*VIDEO LANDING PAGE STYLES*/
 
-/*VIDEO LANDING PAGE STYLES*/
-
 body {
     font-family: "Montserrat", Arial, sans-serif;
     width: 100%;
@@ -248,9 +242,9 @@ body {
     .btn {
         text-decoration: none;
         color: #fff;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         background-color: rgb(78, 30, 211);
-        padding: 1% 3%;
+        padding: 0.7rem 2rem;
         border-radius: 30px;
         margin-top: 10%;
     }
@@ -306,4 +300,109 @@ body {
     background: rgb(165, 165, 165);
     position: absolute;
     opacity: 0.3;
+}
+
+/*ABOUT US SECTION STYLES*/
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item-text {
+    width: 100%;
+}
+
+.flex-item-img{
+    width: 100%;
+    height: 50rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 6.5rem;
+}
+
+#img-1 {
+    background-image: url(./Assets/pexels-jarod-lovekamp-2404444.jpg);
+}
+
+.flex-item-text h1{
+    margin-top: 6.5rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    display: inline-block;
+}
+
+.flex-item-text p{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    margin: 0 3rem;
+}
+
+/*EVENTS SECTION STYLES*/
+
+.table-container {
+    width: 100%;
+    height: 50rem;
+}
+
+table {
+    font-size: 1rem;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+th {
+    border-bottom: 1px solid #000000;
+}
+
+td {
+    padding: 1rem 0;
+}
+
+.btn-row {
+    border-bottom: 1px solid #000;
+}
+
+.flex-container h1{
+    margin-top: 6.5rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    display: inline-block;
+}
+
+.sign-up-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: rgb(78, 30, 211);
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover {
+    background: rgba(0,190,134,1);
+}
+
+#img-2 {
+    background-image: url(./Assets/pexels-trace-hudson-2365457.jpg);
 }
