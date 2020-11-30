@@ -10,9 +10,9 @@ ______
 
 * [Web Design Systems](https://andresuriegas.github.io/codecademy_exercises/Web_Design_Systems/) 
 * [Flexbox Layout](https://andresuriegas.github.io/codecademy_exercises/Tea_Cozy_Layout_Flexbox/)
-* [Company Home Page with Flexbox](https://andresuriegas.github.io/codecademy_exercises/Company_Home_Page_Flexbox)
-* [Responsive Club Website](https://andresuriegas.github.io/codecademy_exercises/Responsive-Club-Website)
-* [Number Guesser](https://andresuriegas.github.io/codecademy_exercises/Number_Guesser)
+* [Company Home Page with Flexbox](https://andresuriegas.github.io/codecademy_exercises/Company_Home_Page_Flexbox/)
+* [Responsive Club Website](https://andresuriegas.github.io/codecademy_exercises/Responsive-Club-Website/)
+* [Number Guesser](https://andresuriegas.github.io/codecademy_exercises/Number_Guesser/)
 ______
 
 I'm currently doing the #100DaysOfCode challenge. You read about my progress in my [Twitter](https://twitter.com/andresuriegas) :smile: 
